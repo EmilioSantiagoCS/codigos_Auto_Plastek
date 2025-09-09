@@ -1,0 +1,93 @@
+[
+    {
+        "id": "34efffd23aaa3be9",
+        "type": "ui_dropdown",
+        "z": "dbb47952ee40ed45",
+        "name": "Estado persistente",
+        "label": "Estado",
+        "tooltip": "",
+        "place": "",
+        "group": "0948f5011a9bb8de",
+        "order": 0,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Producción",
+                "value": "PROD",
+                "type": "str"
+            },
+            {
+                "label": "Paro prog. (AP)",
+                "value": "AP",
+                "type": "str"
+            },
+            {
+                "label": "Cambio de molde (CM)",
+                "value": "CM",
+                "type": "str"
+            },
+            {
+                "label": "Organización (PO)",
+                "value": "PO",
+                "type": "str"
+            },
+            {
+                "label": "Avería máquina (AMQ)",
+                "value": "AMQ",
+                "type": "str"
+            },
+            {
+                "label": "Avería molde (AMO)",
+                "value": "AMO",
+                "type": "str"
+            },
+            {
+                "label": "Ajuste (AJ)",
+                "value": "AJ",
+                "type": "str"
+            }
+        ],
+        "payload": "PROD",
+        "topic": "estado",
+        "topicType": "str",
+        "className": "",
+        "x": 160,
+        "y": 460,
+        "wires": [
+            [
+                "d78f6058399e0468"
+            ]
+        ]
+    },
+    {
+        "id": "0948f5011a9bb8de",
+        "type": "ui_group",
+        "z": "dbb47952ee40ed45",
+        "name": "Captura Hora x Hora (compacta)",
+        "tab": "a2accbc87ffc2111",
+        "order": 2,
+        "disp": true,
+        "width": 24
+    },
+    {
+        "id": "a2accbc87ffc2111",
+        "type": "ui_tab",
+        "z": "dbb47952ee40ed45",
+        "name": "Auto Plastek",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "645e95ace72e7f21",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
